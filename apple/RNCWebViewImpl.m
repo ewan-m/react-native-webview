@@ -907,7 +907,9 @@ RCTAutoInsetsProtocol>
 // UIScrollViewDelegate method
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
 {
-  scrollView.decelerationRate = _decelerationRate;
+  NSLog(@"Deceleration: %@", scrollView.decelerationRate);
+
+(*   scrollView.decelerationRate = _decelerationRate; *)
 }
 #endif // !TARGET_OS_OSX
 
